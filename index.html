@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADEL BENALI - Control Engineering student</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Adel Benali</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contacts</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-wrapper">
+            <div class="hero-content">
+                <h1>Hello<span class="dot">.</span></h1>
+                <h2>I'm Adel</h2>
+                <h3>Control Engineering student</h3>
+                <div class="hero-buttons">
+                    <button class="btn-primary" onclick="scrollToContact()">Got a project?</button>
+                    <button class="btn-secondary" onclick="downloadCV()">Download CV</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="decorative-bracket bracket-left">&lt;</div>
+                <div class="profile-circle">
+                    <img src="adel.png" alt="Profile">
+                </div>
+                <div class="decorative-bracket bracket-right">&gt;</div>
+            </div>
+        </div>
+        <div class="tech-stack">
+            <span>HTML5</span>
+            <span>CSS</span>
+            <span>Javascript</span>
+            <span>Node.js</span>
+            <span>Python</span>
+            <span>C++</span>
+            <span>Github</span>
+        </div>
+    </section>
+
+    <!-- Services & About Section -->
+    <section id="about" class="services">
+        <div class="services-list">
+            <div class="service-item">
+                <div class="service-icon">💻</div>
+                <h3>Website Development</h3>
+            </div>
+            <div class="service-item">
+                <div class="service-icon">🎨</div>
+                <h3>Graphic Design</h3>
+            </div>
+            <div class="service-item">
+                <div class="service-icon">🤖</div>
+                <h3>Robotics & Technical Projects</h3>
+            </div>
+        </div>
+        <div class="about">
+            <h2>About Me</h2>
+            <p>
+                I am a student at the École Nationale Polytechnique d'Alger with a strong academic background and a passion for technology and design.
+                Ranked among the top 3% of my class after completing two years of preparatory studies, I combine solid analytical skills with creativity.
+                I specialize in website development and graphic design, and I actively work on technical and robotics-related projects that allow me to turn ideas into practical solutions.
+            </p>
+            <div class="stats">
+                <div class="stat-item">
+                    <h4>Top 3%</h4>
+                    <p>Class<br>Ranking</p>
+                </div>
+                <div class="stat-item">
+                    <h4>2+</h4>
+                    <p>Years of<br>Technical Studies</p>
+                </div>
+                <div class="stat-item">
+                    <h4>3</h4>
+                    <p>Main<br>Skill Areas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <h2>My Skills</h2>
+        <div class="section-divider"></div>
+
+        <div class="skill-category">
+            <h3>Programming & Development</h3>
+            <div class="category-skills">
+                <div class="skill-item glass">
+                    <div class="skill-header">
+                        <span class="skill-name">HTML</span>
+                        <span class="skill-percentage">95%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width:95%"></div>
+                    </div>
+                </div>
+                <div class="skill-item glass">
+                    <div class="skill-header">
+                        <span class="skill-name">CSS</span>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width:90%"></div>
+                    </div>
+                </div>
+                <div class="skill-item glass">
+                    <div class="skill-header">
+                        <span class="skill-name">JavaScript</span>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width:85%"></div>
+                    </div>
+                </div>
+                <div class="skill-item glass">
+                    <div class="skill-header">
+                        <span class="skill-name">Python</span>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width:80%"></div>
+                    </div>
+                </div>
+                <div class="skill-item glass">
+                    <div class="skill-header">
+                        <span class="skill-name">C</span>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width:80%"></div>
+                    </div>
+                </div>
+                <div class="skill-item glass">
+                    <div class="skill-header">
+                        <span class="skill-name">C++</span>
+                        <span class="skill-percentage">70%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width:70%"></div>
+                    </div>
+                </div>
+                <div class="skill-item glass">
+                    <div class="skill-header">
+                        <span class="skill-name">SQL</span>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width:80%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-category">
+            <h3>Engineering & Technical Tools</h3>
+            <div class="category-skills">
+                <div class="skill-item glass">
+                    <div class="skill-header">
+                        <span class="skill-name">MATLAB</span>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width:85%"></div>
+                    </div>
+                </div>
+                <div class="skill-item glass">
+                    <div class="skill-header">
+                        <span class="skill-name">SolidWorks</span>
+                        <span class="skill-percentage">70%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width:70%"></div>
+                    </div>
+                </div>
+                <div class="skill-item glass">
+                    <div class="skill-header">
+                        <span class="skill-name">AutoCAD</span>
+                        <span class="skill-percentage">55%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width:55%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-category">
+            <h3>Design & Media</h3>
+            <div class="category-skills">
+                <div class="skill-item glass">
+                    <div class="skill-header">
+                        <span class="skill-name">Photoshop</span>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width:90%"></div>
+                    </div>
+                </div>
+                <div class="skill-item glass">
+                    <div class="skill-header">
+                        <span class="skill-name">Illustrator</span>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width:80%"></div>
+                    </div>
+                </div>
+                <div class="skill-item glass">
+                    <div class="skill-header">
+                        <span class="skill-name">Premiere Pro</span>
+                        <span class="skill-percentage">75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width:75%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-category">
+            <h3>Development Tools</h3>
+            <div class="category-skills">
+                <div class="skill-item glass">
+                    <div class="skill-header">
+                        <span class="skill-name">GitHub</span>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width:85%"></div>
+                    </div>
+                </div>
+                <div class="skill-item glass">
+                    <div class="skill-header">
+                        <span class="skill-name">VS Code</span>
+                        <span class="skill-percentage">95%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width:95%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="section-divider"></div>
+
+        <div class="project-item">
+            <div class="project-preview">
+                <img src="roboko1.jpg" alt="ROBOKO Robotics Challenge">
+            </div>
+            <div class="project-info">
+                <h3>ROBOKO Robotics Challenge</h3>
+                <div class="project-tags">
+                    <span class="tag">Robotics</span>
+                    <span class="tag">Team Project</span>
+                    <span class="tag">Problem Solving</span>
+                    <span class="tag">IEEE ENP</span>
+                </div>
+                <p>
+                    ROBOKO is a robotics competition organized by the IEEE Student Branch at the École Nationale Polytechnique d'Alger.
+                    This project required strong teamwork, critical thinking, and technical problem-solving under time constraints.
+                </p>
+                <div class="project-buttons">
+                    <button class="btn-view" onclick="openProjectModal()">View Project →</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeProjectModal()">&times;</span>
+            <div class="modal-header">
+                <h2>ROBOKO Robotics Challenge</h2>
+                <div class="project-tags">
+                    <span class="tag">Robotics</span>
+                    <span class="tag">Team Project</span>
+                    <span class="tag">Problem Solving</span>
+                    <span class="tag">IEEE ENP</span>
+                </div>
+            </div>
+            
+            <div class="modal-description">
+                <p>
+                    ROBOKO is an intensive robotics competition organized by the IEEE Student Branch at École Nationale Polytechnique d'Alger. 
+                    This challenging competition brought together talented engineering students to design, build, and program autonomous robots 
+                    capable of completing complex tasks within strict time constraints.
+                </p>
+                <p style="margin-top: 15px;">
+                    Our team worked collaboratively to overcome numerous engineering challenges, from mechanical design and sensor integration 
+                    to algorithm development and real-time decision making. The competition tested not only our technical skills but also our 
+                    ability to work effectively under pressure and adapt to unexpected obstacles.
+                </p>
+            </div>
+
+            <div class="modal-images">
+                <img src="roboko.jpg" alt="ROBOKO Robot">
+                <img src="roboko2.jpg" alt="Team Working">
+                <img src="roboko3.jpg" alt="Competition Day">
+            </div>
+
+            <div class="modal-features">
+                <h3>Key Achievements & Features</h3>
+                <ul>
+                    <li>Designed and built an autonomous robot from scratch within competition timeline</li>
+                    <li>Implemented advanced sensor fusion algorithms for precise navigation</li>
+                    <li>Developed custom control systems for efficient task completion</li>
+                    <li>Successfully collaborated with a multidisciplinary team of engineers</li>
+                    <li>Demonstrated strong problem-solving skills under competitive pressure</li>
+                    <li>Applied theoretical knowledge to practical real-world robotics challenges</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="contact-content">
+            <h2>Have a project?</h2>
+            <h3>Let's talk!</h3>
+            <button class="btn-primary" onclick="handleSubmit()">Submit</button>
+        </div>
+        <div class="contact-form">
+            <form id="contactForm">
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea name="message" required></textarea>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Success Popup -->
+    <div class="success-popup-overlay" id="popupOverlay" onclick="closePopup()"></div>
+    <div class="success-popup" id="successPopup">
+        <h3>✓ Message Received!</h3>
+        <p>
+            Thank you for reaching out. I will review your message and respond within 24 hours.
+        </p>
+        <button class="popup-close-btn" onclick="closePopup()">Close</button>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer">
+        <div class="container">
+            <footer class="glasss">
+                <div class="footer-content">
+                    <h2>Social Links</h2>
+                    <div class="social-icons">
+                        <a href="https://github.com/adel-benali" style="--color: #333" title="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/adel-benali-6a847232b" style="--color: #0072b1" title="linkedin">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.instagram.com/adel_benali4" style="--color: #E1306C" title="instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@stay_patient0" style="--color: #FF0050" title="TikTok">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                        <a href="https://www.facebook.com/share/1GAhrShvqx/" style="--color: #4267B2" title="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </div>
+                    <div class="copyright">
+                        &copy; 2026 Adel Benali. All rights reserved.
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" onclick="scrollToTop()" title="Back to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        // Initialize EmailJS
+        (function(){
+            emailjs.init("uxjSQtHKH18rNTe3y");
+        })();
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Scroll to contact section
+        function scrollToContact() {
+            const contactSection = document.getElementById('contact');
+            contactSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        // Scroll to top function
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Show/hide scroll to top button
+        window.addEventListener('scroll', () => {
+            const scrollButton = document.getElementById('scrollToTop');
+            if (window.pageYOffset > 300) {
+                scrollButton.classList.add('show');
+            } else {
+                scrollButton.classList.remove('show');
+            }
+        });
+
+        // Handle contact form submission
+        function handleSubmit() {
+            const form = document.getElementById('contactForm');
+            const name = form.name.value;
+            const email = form.email.value;
+            const message = form.message.value;
+
+            if (!name || !email || !message) {
+                alert('Please fill in all fields before submitting.');
+                return;
+            }
+
+            // Send email via EmailJS
+            emailjs.sendForm(
+                "service_zo3uag9",
+                "template_c0uxywy",
+                "#contactForm"
+            ).then(() => {
+                // Show success popup
+                document.getElementById('popupOverlay').classList.add('show');
+                document.getElementById('successPopup').classList.add('show');
+                
+                // Clear form
+                form.reset();
+            }).catch((error) => {
+                alert("Failed to send message. Please try again.");
+                console.log(error);
+            });
+        }
+
+        // Close popup function
+        function closePopup() {
+            document.getElementById('popupOverlay').classList.remove('show');
+            document.getElementById('successPopup').classList.remove('show');
+        }
+
+        // Close popup with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closePopup();
+            }
+        });
+
+        // Download CV as PDF
+        function downloadCV() {
+            const { jsPDF } = window.jspdf;
+            const doc = new jsPDF();
+
+            // Set colors
+            const primaryColor = [255, 107, 107];
+            const textColor = [0, 0, 0];
+
+            // Header
+            doc.setFillColor(...primaryColor);
+            doc.rect(0, 0, 210, 40, 'F');
+            
+            doc.setTextColor(255, 255, 255);
+            doc.setFontSize(28);
+            doc.text('ADEL BENALI', 105, 20, { align: 'center' });
+            
+            doc.setFontSize(14);
+            doc.text('Control Engineering Student', 105, 30, { align: 'center' });
+
+            // Contact Info
+            doc.setTextColor(...textColor);
+            doc.setFontSize(10);
+            doc.text('Email: contact@adelbenali.com | GitHub: adel-benali', 105, 50, { align: 'center' });
+
+            // About Section
+            doc.setFontSize(16);
+            doc.setTextColor(...primaryColor);
+            doc.text('ABOUT ME', 20, 65);
+            
+            doc.setFontSize(10);
+            doc.setTextColor(...textColor);
+            const aboutText = 'Student at École Nationale Polytechnique d\'Alger. Ranked top 3% of class after two years of preparatory studies. Specializing in website development, graphic design, and robotics projects.';
+            const splitAbout = doc.splitTextToSize(aboutText, 170);
+            doc.text(splitAbout, 20, 75);
+
+            // Education
+            doc.setFontSize(16);
+            doc.setTextColor(...primaryColor);
+            doc.text('EDUCATION', 20, 100);
+            
+            doc.setFontSize(11);
+            doc.setTextColor(...textColor);
+            doc.text('École Nationale Polytechnique d\'Alger', 20, 110);
+            doc.setFontSize(10);
+            doc.text('Control Engineering | Top 3% Class Ranking', 20, 117);
+
+            // Skills
+            doc.setFontSize(16);
+            doc.setTextColor(...primaryColor);
+            doc.text('TECHNICAL SKILLS', 20, 135);
+            
+            doc.setFontSize(10);
+            doc.setTextColor(...textColor);
+            doc.text('Programming: HTML5, CSS3, JavaScript, Python, C, C++, SQL', 20, 145);
+            doc.text('Engineering Tools: MATLAB, SolidWorks, AutoCAD', 20, 152);
+            doc.text('Design: Photoshop, Illustrator, Premiere Pro', 20, 159);
+            doc.text('Development: GitHub, VS Code, Node.js', 20, 166);
+
+            // Projects
+            doc.setFontSize(16);
+            doc.setTextColor(...primaryColor);
+            doc.text('PROJECTS', 20, 185);
+            
+            doc.setFontSize(11);
+            doc.setTextColor(...textColor);
+            doc.text('ROBOKO Robotics Challenge - IEEE ENP', 20, 195);
+            doc.setFontSize(10);
+            const projectDesc = 'Designed and built autonomous robot for competition. Implemented sensor fusion algorithms and custom control systems. Demonstrated strong teamwork and problem-solving under pressure.';
+            const splitProject = doc.splitTextToSize(projectDesc, 170);
+            doc.text(splitProject, 20, 202);
+
+            // Services
+            doc.setFontSize(16);
+            doc.setTextColor(...primaryColor);
+            doc.text('SERVICES', 20, 230);
+            
+            doc.setFontSize(10);
+            doc.setTextColor(...textColor);
+            doc.text('• Website Development', 20, 240);
+            doc.text('• Graphic Design', 20, 247);
+            doc.text('• Robotics & Technical Projects', 20, 254);
+
+            // Footer
+            doc.setFontSize(8);
+            doc.setTextColor(128, 128, 128);
+            doc.text('Generated: ' + new Date().toLocaleDateString(), 105, 285, { align: 'center' });
+
+            // Save the PDF
+            doc.save('Adel_Benali_CV.pdf');
+        }
+
+        // Project Modal Functions
+        function openProjectModal() {
+            document.getElementById('projectModal').style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeProjectModal() {
+            document.getElementById('projectModal').style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            const modal = document.getElementById('projectModal');
+            if (event.target == modal) {
+                closeProjectModal();
+            }
+        }
+
+        // Navigation active state
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-links a');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').slice(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Animate skill bars on scroll
+        const observerOptions = {
+            threshold: 0.5,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const progressBars = entry.target.querySelectorAll('.skill-progress');
+                    progressBars.forEach(bar => {
+                        bar.style.width = bar.style.width;
+                    });
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.skill-category').forEach(category => {
+            observer.observe(category);
+        });
+    </script>
+</body>
+</html>
