@@ -76,7 +76,6 @@ nav {
     color: #ff6b6b;
 }
 
-/* Decorative line before "I'm Adel" */
 .hero h2 {
     font-size: 32px;
     color: #aaa;
@@ -474,7 +473,6 @@ nav {
     color: #0f1922;
 }
 
-/* Modal Styles */
 .modal {
     display: none;
     position: fixed;
@@ -573,7 +571,6 @@ nav {
     margin-right: 10px;
 }
 
-/* Success Popup Styles */
 .success-popup {
     display: none;
     position: fixed;
@@ -633,23 +630,6 @@ nav {
     line-height: 1.8;
     margin-bottom: 25px;
     font-size: 16px;
-}
-
-.success-popup .email-info {
-    background: rgba(255, 107, 107, 0.1);
-    padding: 15px;
-    border-radius: 8px;
-    margin-bottom: 25px;
-}
-
-.success-popup .email-info a {
-    color: #ff6b6b;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.success-popup .email-info a:hover {
-    text-decoration: underline;
 }
 
 .popup-close-btn {
@@ -762,7 +742,6 @@ nav {
     padding-top: 20px;
 }
 
-/* Scroll to Top Button */
 #scrollToTop {
     position: fixed;
     bottom: 30px;
@@ -793,81 +772,21 @@ nav {
     display: flex;
 }
 
-@media (max-width: 768px) {
+/* TABLET RESPONSIVENESS (max-width: 1024px) */
+@media (max-width: 1024px) {
     nav {
-        padding: 15px 20px;
-    }
-
-    .nav-links {
-        gap: 15px;
-        font-size: 12px;
+        padding: 20px 40px;
     }
 
     .hero {
-        padding: 100px 20px 40px;
-    }
-
-    .hero-wrapper {
-        flex-direction: column;
-    }
-
-    .hero h2::before {
-        width: 40px;
-    }
-
-    .profile-circle {
-        width: 280px;
-        height: 280px;
-    }
-
-    .profile-circle img {
-        width: 240px;
-        height: 300px;
+        padding: 130px 40px 0;
     }
 
     .services,
     .skills-section,
     .projects,
     .contact {
-        padding: 40px 20px;
-    }
-
-    .project-item {
-        flex-direction: column;
-    }
-
-    .contact {
-        flex-direction: column;
-        gap: 40px;
-    }
-
-    .modal-content {
-        width: 95%;
-        padding: 20px;
-    }
-
-    .category-skills {
-        grid-template-columns: 1fr;
-    }
-
-    #scrollToTop {
-        width: 45px;
-        height: 45px;
-        bottom: 20px;
-        right: 20px;
-        font-size: 18px;
-    }
-
-    .success-popup {
-        padding: 30px 20px;
-    }
-
-    .success-popup h3 {
-        font-size: 24px;
-    }
-
-    .success-popup p {
-        font-size: 14px;
+        padding: 60px 40px;
     }
 }
 
@@ -898,17 +817,18 @@ nav {
     }
 
     .hero-wrapper {
-        flex-direction: column;
-        margin-bottom: 30px;
+        flex-direction: column-reverse;
+        margin-bottom: 0;
     }
 
     .hero-content {
         order: 2;
+        margin-top: 0;
     }
 
     .hero-image {
         order: 1;
-        margin-bottom: 40px;
+        margin-bottom: 30px;
     }
 
     .hero h1 {
@@ -920,6 +840,10 @@ nav {
         justify-content: center;
     }
 
+    .hero h2::before {
+        width: 40px;
+    }
+
     .hero h3 {
         font-size: 26px;
     }
@@ -928,6 +852,7 @@ nav {
         flex-direction: column;
         gap: 15px;
         align-items: center;
+        margin-bottom: 0;
     }
 
     .btn-primary,
@@ -938,11 +863,20 @@ nav {
     }
 
     .tech-stack {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: clamp(12px, 3vw, 20px);
-        font-size: clamp(11px, 2.5vw, 14px);
-        padding: 25px 10px;
+      display: flex;
+    gap: clamp(40px, 10vw, 120px);
+    color: #555;
+    font-size: clamp(12px, 1.2vw, 16px);
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    margin-top: -20px;
+    justify-content: center;
+    padding: 30px 0;
+    background: linear-gradient(135deg, #1a2332 0%, #232c3b 100%);
+    border-top: 1px solid rgba(255, 107, 107, 0.1);
+    border-bottom: 1px solid rgba(255, 107, 107, 0.1);
+    letter-spacing: 0.5px;
     }
 
     .profile-circle {
@@ -1060,6 +994,10 @@ nav {
         padding: 20px;
     }
 
+    .project-preview img {
+        max-width: 100%;
+    }
+
     .project-info h3 {
         font-size: 22px;
     }
@@ -1084,14 +1022,21 @@ nav {
         gap: 40px;
     }
 
+    .contact-content {
+        text-align: center;
+    }
+
+    .contact-content .btn-primary {
+        width: 100%;
+        max-width: 280px;
+    }
+
     .contact h2 {
         font-size: 28px;
-        text-align: center;
     }
 
     .contact h3 {
         font-size: 24px;
-        text-align: center;
     }
 
     .form-group input,
@@ -1099,28 +1044,34 @@ nav {
         font-size: 16px;
     }
 
-    footer {
+    .modal-content {
+        width: 95%;
+        padding: 20px;
+        margin: 10% auto;
+    }
+
+    #scrollToTop {
+        width: 45px;
+        height: 45px;
+        bottom: 20px;
+        right: 20px;
+        font-size: 18px;
+    }
+
+    .success-popup {
         padding: 30px 20px;
     }
 
-    footer p {
-        font-size: 12px;
+    .success-popup h3 {
+        font-size: 24px;
     }
 
-    .social-links {
-        gap: 15px;
-    }
-
-    .social-links a {
-        width: 35px;
-        height: 35px;
+    .success-popup p {
         font-size: 14px;
     }
 }
 
-/* ============================================
-   SMALL MOBILE (max-width: 480px)
-   ============================================ */
+/* SMALL MOBILE (max-width: 480px) */
 @media (max-width: 480px) {
     .nav-links {
         width: 100%;
@@ -1153,8 +1104,6 @@ nav {
 
     .profile-circle::after {
         border: 12px solid;
-        mask: none;
-        -webkit-mask: none;
     }
 
     .profile-circle img {
