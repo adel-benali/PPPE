@@ -42,7 +42,7 @@
         <div class="hero-image">
           <div class="decorative-bracket bracket-left">&lt;</div>
           <div class="profile-circle">
-            <img src="adel.png" alt="Profile" />
+            <img src="adel7.png" alt="Profile" />
           </div>
           <div class="decorative-bracket bracket-right">&gt;</div>
         </div>
@@ -269,12 +269,26 @@
 
     <!-- Projects Section -->
     <section id="projects" class="projects">
-      <h2>Projects</h2>
+      <h2>Projects & Experience</h2>
       <div class="section-divider"></div>
 
+      <!-- Projects Subsection -->
+      <div class="subsection-header">
+        <h3>Technical Projects</h3>
+      </div>
+
       <div class="project-item">
-        <div class="project-preview">
-          <img src="roboko1.jpg" alt="ROBOKO Robotics Challenge" />
+        <div class="project-preview carousel-container">
+          <button class="carousel-btn prev" onclick="changeSlide('roboko', -1)">‹</button>
+          <div class="carousel-images" id="roboko-carousel">
+            <img src="roboko1.jpg" alt="ROBOKO Robotics Challenge" class="carousel-slide active" />
+            <img src="roboko.jpg" alt="ROBOKO Robot" class="carousel-slide" />
+            <img src="roboko2.jpg" alt="Team Working" class="carousel-slide" />
+            <img src="roboko3.jpg" alt="Competition Day" class="carousel-slide" />
+            <img src="roboko5.jpg" alt="Competition Day" class="carousel-slide" />
+          </div>
+          <button class="carousel-btn next" onclick="changeSlide('roboko', 1)">›</button>
+          <div class="carousel-indicators" id="roboko-indicators"></div>
         </div>
         <div class="project-info">
           <h3>ROBOKO Robotics Challenge</h3>
@@ -300,33 +314,105 @@
           </div>
         </div>
       </div>
+
       <div class="project-item">
-    <div class="project-preview">
-        <!-- MAIN IMAGE: Homepage screenshot -->
-        <img src="quran-home.png" alt="Quran Web Platform">
-    </div>
+        <div class="project-preview carousel-container">
+          <button class="carousel-btn prev" onclick="changeSlide('quran', -1)">‹</button>
+          <div class="carousel-images" id="quran-carousel">
+            <img src="quran-home.png" alt="Quran Web Platform" class="carousel-slide active">
+            <img src="quran-qiraa.png" alt="Quran Reading Section" class="carousel-slide">
+            <img src="quran-backend.png" alt="Backend System" class="carousel-slide">
+            <img src="quran-tilawa.png" alt="Tilawa Section" class="carousel-slide">
+            <img src="quran-quiz.png" alt="Quiz System" class="carousel-slide">
+            <img src="quran-quiz1.png" alt="Quiz Interface" class="carousel-slide">
+            <img src="quran-code.png" alt="Code Implementation" class="carousel-slide">
+          </div>
+          <button class="carousel-btn next" onclick="changeSlide('quran', 1)">›</button>
+          <div class="carousel-indicators" id="quran-indicators"></div>
+        </div>
 
-    <div class="project-info">
-        <h3>Quran Web Platform</h3>
+        <div class="project-info">
+          <h3>Quran Web Platform</h3>
 
-        <div class="project-tags">
+          <div class="project-tags">
             <span class="tag">Web Development</span>
             <span class="tag">Backend</span>
             <span class="tag">Database</span>
             <span class="tag">Educational</span>
-        </div>
+          </div>
 
-        <p>
+          <p>
             A web-based Quran platform that provides Tilawa recitation, audio listening,
-            and an interactive quiz system to test users’ knowledge of the Quran.
+            and an interactive quiz system to test users' knowledge of the Quran.
             The backend dynamically generates questions to ensure a different experience each time.
-        </p>
+          </p>
 
-        <div class="project-buttons">
+          <div class="project-buttons">
             <button class="btn-view" onclick="openQuranModal()">View Project →</button>
+          </div>
         </div>
-    </div>
-</div>
+      </div>
+
+      <!-- Internships Subsection -->
+      <div class="subsection-header">
+        <h3>Professional Experience</h3>
+      </div>
+
+      <div class="internship-item">
+        <div class="internship-header">
+          <div class="internship-title-block">
+            <h3>Industrial Discovery Internship</h3>
+            <h4>Société des Ciments de Béni Saf (SCIBS) – GICA Group</h4>
+          </div>
+          <div class="internship-period">
+            <span class="period-badge">December 13-25, 2024</span>
+          </div>
+        </div>
+
+        <div class="internship-content">
+          <div class="internship-description">
+            <p>
+              This internship provided my first immersion into an industrial environment and allowed me to understand the global operation of a large-scale cement production plant. I discovered the complete cement manufacturing process, from raw material extraction, crushing, and pre-homogenization, to clinker production, cement grinding, storage, and final dispatch.
+            </p>
+            <p>
+              I was introduced to industrial automation systems, including sensors, actuators, programmable logic controllers (PLCs/APIs), industrial communication networks, and SCADA supervision systems. I also observed control room operations, system architecture, and real-time process monitoring.
+            </p>
+            <p>
+              This experience strengthened my interest in automation and control engineering, helping me better understand real-world applications of theoretical concepts and key industrial challenges such as process optimization, safety, energy efficiency, and environmental protection.
+            </p>
+          </div>
+
+          <div class="internship-highlights">
+            <h4>Key Learnings</h4>
+            <ul>
+              <li>Complete cement manufacturing process workflow</li>
+              <li>Industrial automation systems (PLCs, SCADA)</li>
+              <li>Sensors, actuators, and control networks</li>
+              <li>Control room operations and monitoring</li>
+              <li>Process optimization and safety protocols</li>
+              <li>Energy efficiency and environmental standards</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="internship-gallery">
+          <div class="gallery-grid">
+            <!-- Placeholder images - Replace with actual internship images -->
+            <div class="gallery-item">
+              <img src="internship-1.jpg" alt="SCIBS Plant Overview" />
+            </div>
+            <div class="gallery-item">
+              <img src="internship-2.jpg" alt="Control Room" />
+            </div>
+            <div class="gallery-item">
+              <img src="internship-3.jpg" alt="Production Line" />
+            </div>
+            <div class="gallery-item">
+              <img src="internship-4.jpg" alt="Automation Systems" />
+            </div>
+          </div>
+        </div>
+      </div>
 
     </section>
 
@@ -365,6 +451,7 @@
           <img src="roboko.jpg" alt="ROBOKO Robot" />
           <img src="roboko2.jpg" alt="Team Working" />
           <img src="roboko3.jpg" alt="Competition Day" />
+           <img src="roboko5.jpg" alt="Competition Day" />
         </div>
 
         <div class="modal-features">
@@ -399,38 +486,38 @@
         </div>
       </div>
     </div>
+
     <!-- Quran Project Modal -->
-<div id="quranModal" class="modal">
-    <div class="modal-content">
+    <div id="quranModal" class="modal">
+      <div class="modal-content">
         <span class="close-modal" onclick="closeQuranModal()">&times;</span>
 
         <div class="modal-header">
-            <h2>Quran Web Platform</h2>
-            <div class="project-tags">
-                <span class="tag">HTML</span>
-                <span class="tag">CSS</span>
-                <span class="tag">JavaScript</span>
-                <span class="tag">Backend</span>
-                <span class="tag">Database</span>
-            </div>
+          <h2>Quran Web Platform</h2>
+          <div class="project-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Backend</span>
+            <span class="tag">Database</span>
+          </div>
         </div>
 
         <div class="modal-description">
-            <p>
-                This project is an educational web platform dedicated to the Holy Quran.
-                It includes sections for Tilawa (recitation), audio listening, and an interactive
-                quiz system designed to assess and improve users’ knowledge.
-            </p>
+          <p>
+            This project is an educational web platform dedicated to the Holy Quran.
+            It includes sections for Tilawa (recitation), audio listening, and an interactive
+            quiz system designed to assess and improve users' knowledge.
+          </p>
 
-            <p style="margin-top: 15px;">
-                The backend plays a key role by dynamically generating quiz questions on each attempt,
-                preventing repetition and enhancing user engagement. The project combines frontend
-                usability with backend logic to deliver a complete learning experience.
-            </p>
+          <p style="margin-top: 15px;">
+            The backend plays a key role by dynamically generating quiz questions on each attempt,
+            preventing repetition and enhancing user engagement. The project combines frontend
+            usability with backend logic to deliver a complete learning experience.
+          </p>
         </div>
 
         <div class="modal-images">
-            <!-- IMAGE ORDER EXPLAINED BELOW -->
             <img src="quran-qiraa.png" alt="Quran Website Home">
             <img src="quran-backend.png" alt="Quran Website Home">
             <img src="quran-tilawa.png" alt="Tilawa Section">
@@ -440,19 +527,18 @@
         </div>
 
         <div class="modal-features">
-            <h3>Key Features</h3>
-            <ul>
-                <li>Tilawa section for Quran recitation</li>
-                <li>Audio listening section with organized Surahs</li>
-                <li>Interactive quiz system to test Quran knowledge</li>
-                <li>Backend logic that generates different questions on each attempt</li>
-                <li>Database integration for questions and answers</li>
-                <li>Clean and user-friendly interface</li>
-            </ul>
+          <h3>Key Features</h3>
+          <ul>
+            <li>Tilawa section for Quran recitation</li>
+            <li>Audio listening section with organized Surahs</li>
+            <li>Interactive quiz system to test Quran knowledge</li>
+            <li>Backend logic that generates different questions on each attempt</li>
+            <li>Database integration for questions and answers</li>
+            <li>Clean and user-friendly interface</li>
+          </ul>
         </div>
+      </div>
     </div>
-</div>
-
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
@@ -555,12 +641,80 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
-
     <script>
       // Initialize EmailJS
       (function () {
         emailjs.init("uxjSQtHKH18rNTe3y");
       })();
+
+      // Carousel functionality
+      const carousels = {
+        roboko: {
+          currentSlide: 0,
+          images: ['roboko1.jpg', 'roboko.jpg', 'roboko2.jpg', 'roboko3.jpg', 'roboko5.jpg']
+        },
+        quran: {
+          currentSlide: 0,
+          images: ['quran-home.png', 'quran-qiraa.png', 'quran-backend.png', 'quran-tilawa.png', 'quran-quiz.png', 'quran-quiz1.png', 'quran-code.png']
+        }
+      };
+
+      // Initialize carousels
+      function initCarousels() {
+        Object.keys(carousels).forEach(id => {
+          createIndicators(id);
+          startAutoSlide(id);
+        });
+      }
+
+      function createIndicators(carouselId) {
+        const indicatorsContainer = document.getElementById(`${carouselId}-indicators`);
+        const numSlides = carousels[carouselId].images.length;
+        
+        for (let i = 0; i < numSlides; i++) {
+          const indicator = document.createElement('span');
+          indicator.className = i === 0 ? 'indicator active' : 'indicator';
+          indicator.onclick = () => goToSlide(carouselId, i);
+          indicatorsContainer.appendChild(indicator);
+        }
+      }
+
+      function changeSlide(carouselId, direction) {
+        const carousel = carousels[carouselId];
+        const slides = document.querySelectorAll(`#${carouselId}-carousel .carousel-slide`);
+        const indicators = document.querySelectorAll(`#${carouselId}-indicators .indicator`);
+        
+        slides[carousel.currentSlide].classList.remove('active');
+        indicators[carousel.currentSlide].classList.remove('active');
+        
+        carousel.currentSlide = (carousel.currentSlide + direction + slides.length) % slides.length;
+        
+        slides[carousel.currentSlide].classList.add('active');
+        indicators[carousel.currentSlide].classList.add('active');
+      }
+
+      function goToSlide(carouselId, index) {
+        const carousel = carousels[carouselId];
+        const slides = document.querySelectorAll(`#${carouselId}-carousel .carousel-slide`);
+        const indicators = document.querySelectorAll(`#${carouselId}-indicators .indicator`);
+        
+        slides[carousel.currentSlide].classList.remove('active');
+        indicators[carousel.currentSlide].classList.remove('active');
+        
+        carousel.currentSlide = index;
+        
+        slides[carousel.currentSlide].classList.add('active');
+        indicators[carousel.currentSlide].classList.add('active');
+      }
+
+      function startAutoSlide(carouselId) {
+        setInterval(() => {
+          changeSlide(carouselId, 1);
+        }, 3000); // Change slide every 3 seconds
+      }
+
+      // Initialize carousels on page load
+      window.addEventListener('load', initCarousels);
 
       // Smooth scrolling for navigation links
       document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
@@ -642,155 +796,247 @@
         }
       });
 
-  // Download CV as PDF
-        function downloadCV() {
-    const { jsPDF } = window.jspdf;
-    const doc = new jsPDF();
+      // Download CV as PDF
+      function downloadCV() {
+        const { jsPDF } = window.jspdf;
+        const doc = new jsPDF();
 
-    // Colors
-    const primaryColor = [255, 107, 107];
-    const textColor = [0, 0, 0];
+        // Colors
+        const primaryColor = [255, 107, 107];
+        const darkGray = [60, 60, 60];
+        const lightGray = [120, 120, 120];
+        const white = [255, 255, 255];
 
-    /* ---------- HEADER ---------- */
-    doc.setFillColor(...primaryColor);
-    doc.rect(0, 0, 210, 40, 'F');
+        // Header with gradient effect
+        doc.setFillColor(...primaryColor);
+        doc.rect(0, 0, 210, 45, 'F');
+        
+        // Name
+        doc.setTextColor(...white);
+        doc.setFontSize(32);
+        doc.setFont(undefined, 'bold');
+        doc.text('ADEL BENALI', 105, 20, { align: 'center' });
+        
+        // Title
+        doc.setFontSize(14);
+        doc.setFont(undefined, 'normal');
+        doc.text('Control Engineering Student', 105, 30, { align: 'center' });
+        
+        // Subtitle
+        doc.setFontSize(11);
+        doc.text('École Nationale Polytechnique d\'Alger', 105, 38, { align: 'center' });
 
-    doc.setTextColor(255, 255, 255);
-    doc.setFontSize(28);
-    doc.text('ADEL BENALI', 105, 20, { align: 'center' });
+        // Contact Info Bar
+        doc.setFillColor(245, 245, 245);
+        doc.rect(0, 45, 210, 12, 'F');
+        doc.setTextColor(...darkGray);
+        doc.setFontSize(9);
+        doc.text('adel.ben_ali@g.enp.edu.dz  |  +213 666 335 579  |  github.com/adel-benali', 105, 52, { align: 'center' });
 
-    doc.setFontSize(14);
-    doc.text('Engineering Student | Web & Robotics', 105, 30, { align: 'center' });
+        let yPos = 65;
 
-    /* ---------- CONTACT INFO ---------- */
-    doc.setTextColor(...textColor);
-    doc.setFontSize(10);
-    doc.text(
-        'Email: adel.ben_ali@g.enp.edu.dz | Phone: +213 666 335 579 | GitHub: adel-benali',
-        105,
-        50,
-        { align: 'center' }
-    );
+        // PROFILE SECTION
+        doc.setFillColor(...primaryColor);
+        doc.rect(15, yPos, 3, 6, 'F');
+        doc.setTextColor(...primaryColor);
+        doc.setFontSize(14);
+        doc.setFont(undefined, 'bold');
+        doc.text('PROFILE', 20, yPos + 4);
 
-    /* ---------- ABOUT ---------- */
-    doc.setFontSize(16);
-    doc.setTextColor(...primaryColor);
-    doc.text('ABOUT ME', 20, 65);
+        yPos += 10;
+        doc.setTextColor(...darkGray);
+        doc.setFontSize(10);
+        doc.setFont(undefined, 'normal');
+        const profileText = "Engineering student ranked in the top 3% at École Nationale Polytechnique d'Alger with expertise in web development, automation, and robotics. Passionate about applying theoretical knowledge to practical engineering solutions.";
+        const profileLines = doc.splitTextToSize(profileText, 175);
+        doc.text(profileLines, 20, yPos);
+        yPos += profileLines.length * 5 + 8;
 
-    doc.setFontSize(10);
-    doc.setTextColor(...textColor);
-    const aboutText =
-        "Student at École Nationale Polytechnique d'Alger. Ranked among the top 3% of my class after two years of preparatory studies. Focused on web development, graphic design, and robotics projects with practical engineering applications.";
-    doc.text(doc.splitTextToSize(aboutText, 170), 20, 75);
+        // EDUCATION SECTION
+        doc.setFillColor(...primaryColor);
+        doc.rect(15, yPos, 3, 6, 'F');
+        doc.setTextColor(...primaryColor);
+        doc.setFontSize(14);
+        doc.setFont(undefined, 'bold');
+        doc.text('EDUCATION', 20, yPos + 4);
 
-    /* ---------- EDUCATION ---------- */
-    doc.setFontSize(16);
-    doc.setTextColor(...primaryColor);
-    doc.text('EDUCATION', 20, 100);
+        yPos += 10;
+        doc.setTextColor(...darkGray);
+        doc.setFontSize(11);
+        doc.setFont(undefined, 'bold');
+        doc.text("École Nationale Polytechnique d'Alger", 20, yPos);
+        
+        doc.setFontSize(10);
+        doc.setFont(undefined, 'normal');
+        doc.setTextColor(...lightGray);
+        doc.text('Control Engineering Program', 20, yPos + 5);
+        doc.text('Top 3% Class Ranking', 20, yPos + 10);
+        yPos += 18;
 
-    doc.setFontSize(11);
-    doc.setTextColor(...textColor);
-    doc.text("École Nationale Polytechnique d'Alger", 20, 110);
-    doc.setFontSize(10);
-    doc.text('Engineering Studies | Top 3% Class Ranking', 20, 117);
+        // TECHNICAL SKILLS SECTION
+        doc.setFillColor(...primaryColor);
+        doc.rect(15, yPos, 3, 6, 'F');
+        doc.setTextColor(...primaryColor);
+        doc.setFontSize(14);
+        doc.setFont(undefined, 'bold');
+        doc.text('TECHNICAL SKILLS', 20, yPos + 4);
 
-    /* ---------- SKILLS ---------- */
-    doc.setFontSize(16);
-    doc.setTextColor(...primaryColor);
-    doc.text('TECHNICAL SKILLS', 20, 135);
+        yPos += 10;
+        doc.setTextColor(...darkGray);
+        doc.setFontSize(10);
+        doc.setFont(undefined, 'bold');
+        
+        doc.text('Programming:', 20, yPos);
+        doc.setFont(undefined, 'normal');
+        doc.text('HTML, CSS, JavaScript, Python, C, C++, SQL', 52, yPos);
+        
+        yPos += 6;
+        doc.setFont(undefined, 'bold');
+        doc.text('Engineering Tools:', 20, yPos);
+        doc.setFont(undefined, 'normal');
+        doc.text('MATLAB, SolidWorks, AutoCAD, Arduino', 52, yPos);
+        
+        yPos += 6;
+        doc.setFont(undefined, 'bold');
+        doc.text('Design & Media:', 20, yPos);
+        doc.setFont(undefined, 'normal');
+        doc.text('Photoshop, Illustrator, Premiere Pro', 52, yPos);
+        
+        yPos += 6;
+        doc.setFont(undefined, 'bold');
+        doc.text('Development:', 20, yPos);
+        doc.setFont(undefined, 'normal');
+        doc.text('Git, GitHub, VS Code, Node.js', 52, yPos);
+        yPos += 12;
 
-    doc.setFontSize(10);
-    doc.setTextColor(...textColor);
-    doc.text('Programming: HTML, CSS, JavaScript, PHP, C, C++, SQL', 20, 145);
-    doc.text('Engineering Tools: MATLAB, SolidWorks, AutoCAD', 20, 152);
-    doc.text('Design: Photoshop, Illustrator, Premiere Pro', 20, 159);
-    doc.text('Development Tools: Git, GitHub, VS Code', 20, 166);
+        // PROFESSIONAL EXPERIENCE SECTION
+        doc.setFillColor(...primaryColor);
+        doc.rect(15, yPos, 3, 6, 'F');
+        doc.setTextColor(...primaryColor);
+        doc.setFontSize(14);
+        doc.setFont(undefined, 'bold');
+        doc.text('PROFESSIONAL EXPERIENCE', 20, yPos + 4);
 
-    /* ---------- PROJECTS ---------- */
-    doc.setFontSize(16);
-    doc.setTextColor(...primaryColor);
-    doc.text('PROJECTS', 20, 185);
+        yPos += 10;
+        doc.setTextColor(...darkGray);
+        doc.setFontSize(11);
+        doc.setFont(undefined, 'bold');
+        doc.text('Industrial Discovery Internship', 20, yPos);
+        doc.setFontSize(10);
+        doc.setFont(undefined, 'normal');
+        doc.setTextColor(...lightGray);
+        doc.text('Société des Ciments de Béni Saf (SCIBS) - GICA Group', 20, yPos + 5);
+        doc.text('December 13-25, 2024', 20, yPos + 10);
+        
+        yPos += 15;
+        doc.setTextColor(...darkGray);
+        const internDesc = "Gained hands-on experience in industrial automation, including PLCs, SCADA systems, sensors, and control networks. Observed cement manufacturing processes and learned about process optimization, safety protocols, and energy efficiency.";
+        const internLines = doc.splitTextToSize(internDesc, 175);
+        doc.text(internLines, 20, yPos);
+        yPos += internLines.length * 5 + 10;
 
-    // ROBOKO
-    doc.setFontSize(11);
-    doc.setTextColor(...textColor);
-    doc.text('ROBOKO Robotics Challenge – IEEE ENP', 20, 195);
+        // PROJECTS SECTION
+        doc.setFillColor(...primaryColor);
+        doc.rect(15, yPos, 3, 6, 'F');
+        doc.setTextColor(...primaryColor);
+        doc.setFontSize(14);
+        doc.setFont(undefined, 'bold');
+        doc.text('PROJECTS', 20, yPos + 4);
 
-    doc.setFontSize(10);
-    const robokoDesc =
-        'Designed and built an autonomous robot using Arduino. Integrated sensors and control systems, and collaborated within a team to solve engineering challenges under competitive constraints.';
-    doc.text(doc.splitTextToSize(robokoDesc, 170), 20, 202);
+        yPos += 10;
+        
+        // ROBOKO Project
+        doc.setTextColor(...darkGray);
+        doc.setFontSize(11);
+        doc.setFont(undefined, 'bold');
+        doc.text('ROBOKO Robotics Challenge', 20, yPos);
+        doc.setFontSize(10);
+        doc.setFont(undefined, 'normal');
+        doc.setTextColor(...lightGray);
+        doc.text('IEEE Student Branch - ENP', 20, yPos + 5);
+        
+        yPos += 10;
+        doc.setTextColor(...darkGray);
+        const robokoDesc = "Designed and programmed an autonomous robot using Arduino. Implemented sensor fusion algorithms and custom control systems while collaborating in a multidisciplinary team under competitive constraints.";
+        const robokoLines = doc.splitTextToSize(robokoDesc, 175);
+        doc.text(robokoLines, 20, yPos);
+        yPos += robokoLines.length * 5 + 8;
 
-    // Quran Project
-    doc.setFontSize(11);
-    doc.text('Quran Web Platform', 20, 220);
+        // Quran Project
+        doc.setFontSize(11);
+        doc.setFont(undefined, 'bold');
+        doc.text('Quran Web Platform', 20, yPos);
+        doc.setFontSize(10);
+        doc.setFont(undefined, 'normal');
+        doc.setTextColor(...lightGray);
+        doc.text('Full-Stack Web Development', 20, yPos + 5);
+        
+        yPos += 10;
+        doc.setTextColor(...darkGray);
+        const quranDesc = "Developed an educational web platform with Quran recitation, audio listening, and interactive quiz features. Implemented dynamic backend logic for question generation and database integration.";
+        const quranLines = doc.splitTextToSize(quranDesc, 175);
+        doc.text(quranLines, 20, yPos);
+        yPos += quranLines.length * 5 + 10;
 
-    doc.setFontSize(10);
-    const quranDesc =
-        'Developed an educational web platform featuring Quran recitation, audio listening, and an interactive quiz system. Implemented backend logic to dynamically generate questions for each user attempt.';
-    doc.text(doc.splitTextToSize(quranDesc, 170), 20, 227);
+        // SERVICES SECTION
+        doc.setFillColor(...primaryColor);
+        doc.rect(15, yPos, 3, 6, 'F');
+        doc.setTextColor(...primaryColor);
+        doc.setFontSize(14);
+        doc.setFont(undefined, 'bold');
+        doc.text('SERVICES', 20, yPos + 4);
 
-    /* ---------- SERVICES ---------- */
-    doc.setFontSize(16);
-    doc.setTextColor(...primaryColor);
-    doc.text('SERVICES', 20, 255);
+        yPos += 10;
+        doc.setTextColor(...darkGray);
+        doc.setFontSize(10);
+        doc.setFont(undefined, 'normal');
+        doc.text('•  Website Development', 25, yPos);
+        doc.text('•  Graphic Design', 25, yPos + 6);
+        doc.text('•  Robotics & Technical Projects', 25, yPos + 12);
 
-    doc.setFontSize(10);
-    doc.setTextColor(...textColor);
-    doc.text('• Website Development', 20, 265);
-    doc.text('• Graphic Design', 20, 272);
-    doc.text('• Robotics & Technical Projects', 20, 279);
+        // Footer
+        doc.setFontSize(8);
+        doc.setTextColor(...lightGray);
+        doc.text('Generated on ' + new Date().toLocaleDateString(), 105, 287, { align: 'center' });
 
-    /* ---------- FOOTER ---------- */
-    doc.setFontSize(8);
-    doc.setTextColor(120, 120, 120);
-    doc.text(
-        'Generated on ' + new Date().toLocaleDateString(),
-        105,
-        290,
-        { align: 'center' }
-    );
+        doc.save('Adel_Benali_CV.pdf');
+      }
 
-    doc.save('Adel_Benali_CV.pdf');
-}
+      /* ---------- ROBOKO MODAL ---------- */
+      function openProjectModal() {
+        document.getElementById("projectModal").style.display = "block";
+        document.body.style.overflow = "hidden";
+      }
 
-/* ---------- ROBOKO MODAL ---------- */
-function openProjectModal() {
-  document.getElementById("projectModal").style.display = "block";
-  document.body.style.overflow = "hidden";
-}
+      function closeProjectModal() {
+        document.getElementById("projectModal").style.display = "none";
+        document.body.style.overflow = "auto";
+      }
 
-function closeProjectModal() {
-  document.getElementById("projectModal").style.display = "none";
-  document.body.style.overflow = "auto";
-}
+      /* ---------- QURAN MODAL ---------- */
+      function openQuranModal() {
+        document.getElementById("quranModal").style.display = "block";
+        document.body.style.overflow = "hidden";
+      }
 
-/* ---------- QURAN MODAL ---------- */
-function openQuranModal() {
-  document.getElementById("quranModal").style.display = "block";
-  document.body.style.overflow = "hidden";
-}
+      function closeQuranModal() {
+        document.getElementById("quranModal").style.display = "none";
+        document.body.style.overflow = "auto";
+      }
 
-function closeQuranModal() {
-  document.getElementById("quranModal").style.display = "none";
-  document.body.style.overflow = "auto";
-}
+      /* ---------- CLICK OUTSIDE TO CLOSE ---------- */
+      window.onclick = function (event) {
+        const robokoModal = document.getElementById("projectModal");
+        const quranModal = document.getElementById("quranModal");
 
-/* ---------- CLICK OUTSIDE TO CLOSE ---------- */
-window.onclick = function (event) {
-  const robokoModal = document.getElementById("projectModal");
-  const quranModal = document.getElementById("quranModal");
+        if (event.target === robokoModal) {
+          closeProjectModal();
+        }
 
-  if (event.target === robokoModal) {
-    closeProjectModal();
-  }
-
-  if (event.target === quranModal) {
-    closeQuranModal();
-  }
-};
-
-
+        if (event.target === quranModal) {
+          closeQuranModal();
+        }
+      };
 
       // Navigation active state
       window.addEventListener("scroll", () => {
