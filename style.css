@@ -1987,7 +1987,6 @@ nav {
         transform: scale(1) rotate(360deg);
     }
 }
-
 /* TABLET RESPONSIVENESS (max-width: 1024px) */
 @media (max-width: 1024px) {
     nav {
@@ -2004,13 +2003,30 @@ nav {
     .contact {
         padding: 60px 40px;
     }
+
+    .internship-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .carousel-images {
+        height: 300px;
+    }
 }
 
 /* MOBILE RESPONSIVENESS (max-width: 768px) */
 @media (max-width: 768px) {
+    /* Disable all animations on mobile */
+    *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+
     nav {
         padding: 15px 20px;
-        flex-wrap: wrap;
+        position: fixed;
+        background: rgba(10, 14, 26, 0.95);
+        backdrop-filter: blur(25px);
     }
 
     .logo {
@@ -2018,12 +2034,19 @@ nav {
     }
 
     .nav-links {
-        gap: 15px;
+        gap: 12px;
         font-size: 12px;
+        flex-wrap: nowrap;
+        width: auto;
     }
 
     .nav-links a {
         font-size: 12px;
+        padding: 6px 8px;
+    }
+
+    .nav-links a::before {
+        display: none;
     }
 
     .hero {
@@ -2044,7 +2067,7 @@ nav {
 
     .hero-image {
         order: 1;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
     }
 
     .hero h1 {
@@ -2068,7 +2091,7 @@ nav {
         flex-direction: column;
         gap: 15px;
         align-items: center;
-        margin-bottom: 0;
+        margin-bottom: 20px;
     }
 
     .btn-primary,
@@ -2078,21 +2101,32 @@ nav {
         padding: 14px 30px;
     }
 
+    .btn-primary::before,
+    .btn-primary::after,
+    .btn-secondary::before {
+        display: none;
+    }
+
     .tech-stack {
         gap: 20px;
         font-size: 12px;
         padding: 20px 10px;
-        margin-top: 0;
+        margin-top: 0px;
+    }
+
+    .tech-stack::before {
+        display: none;
     }
 
     .profile-circle {
         width: 280px;
         height: 280px;
+        position: static;
     }
 
-    .profile-circle::before {
-        width: 400px;
-        height: 400px;
+    .profile-circle::before,
+    .profile-circle::after {
+        animation: none !important;
     }
 
     .profile-circle::after {
@@ -2105,6 +2139,7 @@ nav {
         width: 240px;
         height: 300px;
         filter: contrast(1.08) brightness(1.05) drop-shadow(0 -20px 40px rgba(0, 0, 0, 0.8));
+        margin-bottom: 0px;
     }
 
     .decorative-bracket {
@@ -2122,10 +2157,18 @@ nav {
         padding-left: 15px;
     }
 
+    .service-item::before {
+        display: none;
+    }
+
     .service-icon {
         width: 45px;
         height: 45px;
         font-size: 20px;
+    }
+
+    .service-icon::before {
+        display: none;
     }
 
     .service-item h3 {
@@ -2147,6 +2190,10 @@ nav {
         gap: 30px;
         text-align: center;
         align-items: center;
+    }
+
+    .stat-item::after {
+        display: none;
     }
 
     .stat-item h4 {
@@ -2178,12 +2225,31 @@ nav {
         padding: 20px;
     }
 
+    .glass::before,
+    .glass::after {
+        display: none;
+    }
+
     .projects {
         padding: 40px 20px;
     }
 
     .projects h2 {
         font-size: 28px;
+    }
+
+    .subsection-header {
+        margin: 40px 0 30px;
+    }
+
+    .subsection-header h3 {
+        font-size: 24px;
+        padding: 0 20px;
+    }
+
+    .subsection-header h3::before,
+    .subsection-header h3::after {
+        width: 40px;
     }
 
     .section-divider {
@@ -2199,10 +2265,53 @@ nav {
 
     .project-preview {
         padding: 20px;
+        width: 100%;
     }
 
-    .project-preview img {
+    .project-preview::before,
+    .project-preview::after {
+        display: none;
+    }
+
+    .carousel-images {
+        height: 250px;
+    }
+
+    .carousel-slide {
         max-width: 100%;
+        max-height: 100%;
+    }
+
+    .carousel-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 24px;
+    }
+
+    .carousel-btn.prev {
+        left: 5px;
+    }
+
+    .carousel-btn.next {
+        right: 5px;
+    }
+
+    .carousel-indicators {
+        margin-top: 10px;
+        gap: 8px;
+    }
+
+    .indicator {
+        width: 8px;
+        height: 8px;
+    }
+
+    .indicator.active {
+        width: 24px;
+    }
+
+    .project-info {
+        width: 100%;
     }
 
     .project-info h3 {
@@ -2213,6 +2322,19 @@ nav {
         font-size: 14px;
     }
 
+    .project-tags {
+        gap: 8px;
+    }
+
+    .tag {
+        font-size: 11px;
+        padding: 5px 12px;
+    }
+
+    .tag::before {
+        display: none;
+    }
+
     .project-buttons {
         flex-direction: column;
         gap: 10px;
@@ -2221,6 +2343,72 @@ nav {
     .btn-view {
         width: 100%;
         text-align: center;
+    }
+
+    .btn-view::before {
+        display: none;
+    }
+
+    .internship-item {
+        padding: 30px 20px;
+        margin-bottom: 40px;
+    }
+
+    .internship-header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .internship-title-block h3 {
+        font-size: 22px;
+    }
+
+    .internship-title-block h4 {
+        font-size: 16px;
+    }
+
+    .period-badge {
+        font-size: 13px;
+        padding: 6px 16px;
+        align-self: flex-start;
+    }
+
+    .internship-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin-bottom: 30px;
+    }
+
+    .internship-description p {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .internship-highlights {
+        padding: 20px;
+    }
+
+    .internship-highlights h4 {
+        font-size: 16px;
+    }
+
+    .internship-highlights li {
+        font-size: 13px;
+        padding: 6px 0;
+        padding-left: 20px;
+    }
+
+    .internship-highlights li::before {
+        font-size: 16px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .gallery-item::before {
+        display: none;
     }
 
     .contact {
@@ -2266,12 +2454,20 @@ nav {
         gap: 15px;
     }
 
+    .modal-features li::before {
+        content: "• ";
+    }
+
     #scrollToTop {
         width: 45px;
         height: 45px;
         bottom: 20px;
         right: 20px;
         font-size: 18px;
+    }
+
+    #scrollToTop::before {
+        display: none;
     }
 
     .success-popup {
@@ -2286,21 +2482,50 @@ nav {
         font-size: 14px;
     }
 
+    .popup-close-btn::before {
+        display: none;
+    }
+
     .social-icons a {
         width: 50px;
         height: 50px;
         font-size: 1.5em;
     }
+
+    .social-icons a::before {
+        display: none;
+    }
 }
 
 /* SMALL MOBILE (max-width: 480px) */
 @media (max-width: 480px) {
+    nav {
+        padding: 12px 15px;
+    }
+
+    .logo {
+        font-size: 16px;
+    }
+
     .nav-links {
         width: 100%;
         justify-content: center;
-        margin-top: 10px;
-        gap: 10px;
+        margin-top: 8px;
+        gap: 8px;
         flex-wrap: wrap;
+    }
+
+    .nav-links a {
+        font-size: 11px;
+        padding: 5px 6px;
+    }
+
+    .hero {
+        padding: 90px 15px 30px;
+    }
+
+    .hero-image {
+        margin-bottom: 5px;
     }
 
     .hero h1 {
@@ -2313,6 +2538,17 @@ nav {
 
     .hero h3 {
         font-size: 22px;
+    }
+
+    .hero-buttons {
+        margin-bottom: 15px;
+    }
+
+    .tech-stack {
+        gap: 15px;
+        font-size: 11px;
+        padding: 15px 5px;
+        margin-top: 5px;
     }
 
     .profile-circle {
@@ -2353,12 +2589,6 @@ nav {
         font-size: 24px;
     }
 
-    .tech-stack {
-        gap: 15px;
-        font-size: 11px;
-        padding: 15px 5px;
-    }
-
     .skill-category h3 {
         font-size: 1.3rem;
     }
@@ -2373,6 +2603,51 @@ nav {
 
     .service-item h3 {
         font-size: 14px;
+    }
+
+    .subsection-header h3 {
+        font-size: 20px;
+        padding: 0 15px;
+    }
+
+    .subsection-header h3::before,
+    .subsection-header h3::after {
+        width: 30px;
+    }
+
+    .carousel-images {
+        height: 200px;
+    }
+
+    .carousel-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 20px;
+    }
+
+    .internship-title-block h3 {
+        font-size: 20px;
+    }
+
+    .internship-title-block h4 {
+        font-size: 14px;
+    }
+
+    .period-badge {
+        font-size: 12px;
+        padding: 5px 14px;
+    }
+
+    .internship-description p {
+        font-size: 13px;
+    }
+
+    .internship-highlights h4 {
+        font-size: 15px;
+    }
+
+    .internship-highlights li {
+        font-size: 12px;
     }
 
     .modal-content {
