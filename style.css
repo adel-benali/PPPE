@@ -2091,7 +2091,7 @@ nav {
         flex-direction: column;
         gap: 15px;
         align-items: center;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 
     .btn-primary,
@@ -2139,7 +2139,6 @@ nav {
         width: 240px;
         height: 300px;
         filter: contrast(1.08) brightness(1.05) drop-shadow(0 -20px 40px rgba(0, 0, 0, 0.8));
-        margin-bottom: 0px;
     }
 
     .decorative-bracket {
@@ -2525,7 +2524,7 @@ nav {
     }
 
     .hero-image {
-        margin-bottom: 5px;
+        margin-bottom: 0px;
     }
 
     .hero h1 {
@@ -2541,14 +2540,14 @@ nav {
     }
 
     .hero-buttons {
-        margin-bottom: 15px;
+        margin-bottom: 5px;
     }
 
     .tech-stack {
         gap: 15px;
         font-size: 11px;
         padding: 15px 5px;
-        margin-top: 5px;
+        margin-top: 0px;
     }
 
     .profile-circle {
