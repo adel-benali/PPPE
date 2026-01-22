@@ -2136,7 +2136,7 @@ nav {
     }
 
     .profile-circle img {
-        width: 240px;
+        width: 260px;
         height: 300px;
         filter: contrast(1.08) brightness(1.05) drop-shadow(0 -20px 40px rgba(0, 0, 0, 0.8));
     }
@@ -2565,7 +2565,7 @@ nav {
     }
 
     .profile-circle img {
-        width: 200px;
+        width: 250px;
         height: 260px;
     }
 
